@@ -1,0 +1,17 @@
+First, work from the bottom up. 
+
+1. Look up the address 0x400615 which prints out "Pin benar" which means "true" in idonesia according to google translate. So we want that output.
+
+2. Then in the main function, it calls cek() function to validate the pin. 
+
+3. Check out the compare function right before it jumps at address 0x4005c3. It checks the current input with eax and that it moves the number to eax before it as well.
+
+4. Then with your current disassembler click on the word "valid" which well direct you to the address of the variable.
+
+5. Seems that it the pin is 333333. 
+
+6. Run the command as './rev1 33333', don't forget to "chmod +x rev" before executing it. 
+
+
+
+
